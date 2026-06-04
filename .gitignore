@@ -1,0 +1,13 @@
+# Ignore media files
+*.dav
+*.mp4
+*.mkv
+*.mov
+*.avi
+
+# Ignore python cache
+__pycache__/
+*.pyc
+
+# Ignore OS files
+.DS_Store

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DAV Video Converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Local Converter</p>
+        <h1>DAV to MP4</h1>
+        <p class="subtitle">
+          Convert surveillance .dav files into MP4 directly on your Mac in a simple browser UI.
+        </p>
+      </section>
+
+      <section class="panel">
+        <div id="dropZone" class="drop-zone" tabindex="0" aria-label="Drop zone for DAV files">
+          <p class="drop-title">Drop your .dav file here</p>
+          <p class="drop-subtitle">or pick it manually</p>
+          <label class="file-label" for="fileInput">
+            <span>Select File</span>
+            <input id="fileInput" type="file" accept=".dav,video/*" />
+          </label>
+          <p id="pickedFile" class="picked-file">No file selected.</p>
+        </div>
+
+        <div class="controls">
+          <button id="convertBtn" disabled>Convert to MP4</button>
+          <button id="downloadBtn" disabled>Download MP4</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+
+        <div class="status-wrap">
+          <p id="status" class="status">Pick a .dav file to begin.</p>
+          <p id="progressText" class="progress-text">Progress: 0%</p>
+          <div class="progress-track" aria-hidden="true">
+            <div id="progressBar" class="progress-bar"></div>
+          </div>
+        </div>
+
+        <p class="note">
+          Note: Some encrypted or vendor-specific DAV files may not decode in browser FFmpeg.
+        </p>
+      </section>
+    </main>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
