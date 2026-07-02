@@ -25,7 +25,7 @@ brew install python-tk@3.11
 ### Run
 
 ```bash
-cd "/Users/aay/Desktop/VibeApps/video converter"
+cd "//video converter"
 python desktop_converter.py
 ```
 
