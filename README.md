@@ -12,7 +12,7 @@ This avoids browser worker/runtime limits and is the most reliable option for `.
 ### Setup
 
 ```bash
-cd "/Users/aay/Desktop/VibeApps/video converter"
+cd "//video converter"
 pip install -r requirements.txt
 ```
 
@@ -65,7 +65,7 @@ The browser version is still included, but can fail in restricted browser contex
 Use terminal conversion for best reliability on macOS:
 
 ```bash
-cd "/Users/aay/Desktop/VibeApps/video converter"
+cd "//video converter"
 ffmpeg -y -i "NVR.dav" -c:v libx264 -preset veryfast -crf 23 -c:a aac -b:a 96k -movflags +faststart "NVR_converted_native.mp4"
 ```
 
